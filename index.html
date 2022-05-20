@@ -1,74 +1,469 @@
-<html>
-    <head>
-        <link href="styles.css" rel="stylesheet" type="text/css" />
-        <meta charset="UTF-8" />
-        <title>Matthew Euliano</title>
-        <!-- Make stuff be centered -->
-        <style> 
-            h1 {text-align: left;}
-            h2 {text-align: center;}
-            h3 {text-align: left;}
-            p {text-align: center;}
-            div {text-align: center;}
-        </style>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
 
-        <body class="vignette">
-        <div id="container">
-            <div id="header" class="animate">
-                <header>
-                    <a href="index.html">
-                    <img
-                        src="images/ME_logo.png"
-                        width="200"
-                        alt="ME"
-                        class="logo"
-                    />
-                    </a>
-                    <div class="logo-text">Matthew Euliano</div>
-                    <nav>
-                        <ul class="nav__links">
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                        </ul>
-                    </nav>
-                </header>
-            </div>
+  <head>
+    <title> Matthew Euliano</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-            <!-- make rows of images be the same height by using a table -->
-            <div class="container">
-                <div class="box">
-                    <div class="box-row">
-                        <div class="box-cell box1">
-                            <img src="images/spot1.jpg" width="75%" alt="" />
-                        </div>
-                        <div class="box-text box2">
-                            <div>
-                                <h1>Hi, I'm Matt!</h1> <br>
-                                <h3>
-                                    Born and raised in Gainesville, FL, I earned a bachelor's degree in Mechanical Engineering at Virginia Tech, and am currently working on my master's in Robotics at Northeastern University in Boston, MA. <br><br>
-                                    My ambition is to expand upon my electromechanical integration experience with software and theory for a full systems-level design understanding and proficiency. I am working on advancing my software skills in areas such as autonomous navigation, path planning, sensing, and intelligent behavior.  <br><br>
-                                    My non-technical hobbies include playing basketball, ukulele, and creating Virtual Reality games. I read extensively on topics ranging from science/technology and neuroscience, to self-improvement and science-fiction. Lastly, I'm passionate about helping people to enjoy intellectual exploration and am actively searching for novel platforms to make education more immersive and interactive.<br><br>
-                                    If you'd like to contact me, I can be best reached by email.
-                                    <!-- at <a href="mailto:euliano.m@northeastern.edu">euliano.m@northeastern.edu</a>. -->
-                                    <h1 class="button"><a href="mailto:euliano.m@northeastern.edu">euliano.m@northeastern.edu</a></h1>
-                                    <h3>And here are some other useful links:</h3>
-                                    <h1 class="button"><a href="docs/Euliano_Resume_2022_05.pdf">R&eacute;sum&eacute;</a></h1>
-                                    <h1 class="button"><a href="https://github.com/meuliano">Github</a></h1>
-                                    <h1 class="button"><a href="https://www.linkedin.com/in/matthew-euliano-74658910a/">LinkedIn</a></h1>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--  -->
+    <!--<title>Agency - Start Bootstrap Theme</title>-->
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Matthew Euliano</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#AboutMe">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#TechnicalSkills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Contact</a>
+            </li>
+          </ul>
         </div>
-    </body>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">           
+          <div class="intro-heading text-uppercase"style="background-color: rgba(26, 26, 26, 0.7); color:rgba(253, 201, 43, 1); border-radius:5px;">Matthew Euliano</div>
+          <div class="intro-lead-in">M.S. Robotics Student at Northeastern University</div>
+          
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="docs/Euliano_Resume_2022_05.pdf">
+                <i class="fa fa-file-pdf"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/meuliano">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="mailto:euliano.m@northeastern.edu">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/matthew-euliano-74658910a/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section  class="bg-dark" id="AboutMe">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="mx-auto rounded-circle" src="img/spot_square.jpg" alt="" width="500" height="500"> 
+          </div>
+          <div class="col-md-6"style="color:rgba(255, 255, 255, 1)">
+            <h2 class="section-heading text-uppercase"style="color:rgba(253, 201, 43, 1)">About Me</h2>
+            <p>Born and raised in Gainesville, FL, I earned a bachelor's degree in Mechanical Engineering at Virginia Tech, and am currently working on my master's in Robotics at Northeastern University
+                in Boston, MA. <br><br>
+                My ambition is to expand upon my electromechanical integration experience with software and theory for a full systems-level design understanding and proficiency. I am working on advancing my software skills in areas such as autonomous navigation, path planning, sensing, and intelligent behavior.  <br><br>
+                My non-technical hobbies include playing basketball, ukulele, and creating Virtual Reality games. I read extensively on topics ranging from science/technology and neuroscience, to self-improvement and science-fiction. Lastly, I'm passionate about helping people to enjoy intellectual exploration and am actively searching for novel platforms to make education more immersive and interactive.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase"style="color:rgba(253, 201, 43, 1)">Projects</h2>
+            <h3 class="section-subheading"style="color:rgba(255, 255, 255, 1)"></h3>
+          </div>
+        </div>
+        <div class="row">
+
+         <div class="col-md-6 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#orbslam">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/rsn/rsn_gif.gif" alt="">
+            </a>
+            <div class="portfolio-caption"style="background-color: #22333d; color:rgba(253, 201, 43, 1)">
+              <h4>VI-SLAM on NUance Car</h4>
+              <p class="text-muted">ROS | CV | Python | MATLAB <br>Integrate the ORB-SLAM3 algorithm with ROS for localization and 
+                mapping on the NUance autonomous car.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#orbslam">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/stretch_nav_gif.gif" alt="">
+            </a>
+            <div class="portfolio-caption"style="background-color: #22333d; color:rgba(253, 201, 43, 1)">
+              <h4>Stretch RE1 Autonomous Navigation</h4>
+              <p class="text-muted">ROS | Python | Path Planning | Mapping <br>Using the Hello Robot Stretch RE1 robot to transport 
+                a multimodal sensor suite to perceive human state and wellbeing from a remote location.</p>
+            </div>
+          </div>
+
+          
+
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#terminator">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/Baja/Baja_elsd_cad.jpg" alt="" >
+            </a>
+            <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
+              <h4>Electronic Limited-Slip Differential</h4>
+              <p class="text-muted">C++ | Arduino | CAD | Sensor Fusion<br>Baja SAE Skunkworks team designed and tested an electronically controlled limited-slip differential for the off-road Baja vehicle. I designed the control system, performed sensor selection and integration, and led vehicle simulation</p>
+            </div>
+        </div>
+
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#kuka">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  <img class="img-fluid" src="img/portfolio/eyes/eyes_gif.gif" alt="">
+                </a>
+                <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
+                  <h4>Computer Vision Eye Tracking</h4>
+                  <p class="text-muted">CV | RaspberryPi | Arduino | Python<br>Extended the Servo Smoothing experimental robot designed by James Bruton by integrating webcam and RaspberryPi with OpenCV for face tracking to control the eyes to follow movement</p>
+                </div>
+              </div>
+
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#dynamics">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/gumgun/gumgun3.jpg" alt="">
+            </a>
+            <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
+              <h4>Gum Stick Launcher</h4>
+              <p class="text-muted">Arduino | C++ | CAD | Mech Design<br>Designed, built, tested, and iterated something that nobody on the internet would have done - an overpowered launcher for sticks of gum</p>
+            </div>
+          </div>
+
+          
+
+          <div class="col-md-6 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#healerbaxter">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/vr/vr_gif.gif" alt="">
+            </a>
+            <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
+              <h4>Virtual Reality Game</h4>
+              <p class="text-muted">C++ | Unreal Engine 4 | Blender<br>Developed a Virtual Reality Escape Room using the Oculus Rift CV1</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#panorama">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/photomosaic.png" alt="">
+            </a>
+            <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
+              <h4>ImageMosaic</h4>
+              <p class="text-muted">Computer Vision<br>Create an image panorama by stitching a set
+                of images together</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#dynamics">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/quotes1.jpg" alt="">
+            </a>
+            <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
+              <h4>Quote Display </h4>
+              <p class="text-muted">RaspberryPi | Google APIs<br>Used an Electronic Ink screen to display quotes and messages pulled from a Google Doc</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#dynamics">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/disassembly/disassembly_parts.jpg" alt="" width="400" height="150">
+            </a>
+            <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
+              <h4>Reverse Engineering / Breaking Things </h4>
+              <p class="text-muted">Hand Tools | Soldering<br>"When you want to know how things really work, study them when they're coming apart." -William Gibson</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#pushinggrasping">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/finger/finger_protector.jpg" alt="" width="400" height="300">
+            </a>
+            <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
+              <h4>Fingertip Protector</h4>
+              <p class="text-muted">CAD | Unfortunate Physical Injury <br>Designed an improved fingertip brace and protector after it was removed during an incident with fruit salad and a sharp knife</p>
+            </div>
+          </div>
+
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section  class="bg-dark" id="TechnicalSkills">
+        <div class="container"style="color:rgba(253, 201, 43, 1)">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">Skills</h2>
+              <p></p>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                  <img class="mx-auto rounded-circle" src="img/skills/microcontroller.jpeg" alt="" width="120" height="120">  
+                </span>
+                <h4 class="service-heading">Robotics</h4>
+                <p class="text-muted"> ROS,Linux,Git,Gazebo <br> Computer Vision, Machine Learning<br> Motion Planning,Feedback Control,Cloud Computing</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                  <img class="mx-auto rounded-circle" src="img/skills/coding.jpeg" alt="" width="120" height="120">  
+                </span>
+                <h4 class="service-heading">Programming</h4>
+                <p class="text-muted">C++, C，Python, Java, MATLAB, PLC, VHDL</p>
+            </div>
+            <div class="col-md-4">
+              <span class="fa-stack fa-4x">
+                <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> -->
+                <img class="mx-auto rounded-circle" src="img/skills/electronicdesign.png" alt="" width="120" height="120">
+              </span>
+              <h4 class="service-heading">Electrical Engineering</h4>
+              <p class="text-muted">Power System, Microprocessor<br>PCB Design, Electronic System Design</p>
+            </div>
+            <div class="col-md-4">
+              <span class="fa-stack fa-4x">
+                <img class="mx-auto rounded-circle" src="img/skills/manufacturing.jpeg" alt="" width="120" height="120">  
+              </span>
+              <h4 class="service-heading">Manufacturing</h4>
+              <p class="text-muted"> Laser Cutter, 3D print, soldering </p>
+            </div>
+            <div class="col-md-4">
+              <span class="fa-stack fa-4x">
+                <img class="mx-auto rounded-circle" src="img/skills/cad.png" alt="" width="120" height="120">  
+              </span>
+              <h4 class="service-heading">Mechanical Engineering</h4>
+              <p class="text-muted">Onshape, AutoCAD<br> Mechatronics/ Microcontroller</p>
+            </div>
+            <div class="col-md-4">
+              <span class="fa-stack fa-4x">
+                <img class="mx-auto rounded-circle" src="img/skills/machine_learning.jpeg" alt="" width="120" height="120">  
+              </span>
+              <h4 class="service-heading">Research Interest</h4>
+              <p class="text-muted">Assistive Robotics, Rehabilation<br>Human Movement Science</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    <!-- contact -->
+    <section class="bg-light" id="team">
+      <div class="container"style="color:rgba(255, 255, 255, 1)">
+        <div class="row">
+            <div class="col-lg-12 max-auto mb-5">
+                <img class="mx-auto d-block rounded-circle" src="img/square_pic.jpg" alt="Avatar" width="300" height="300">
+            </div>
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase"style="color:rgba(253, 201, 43, 1)">Contact me</h2>
+           
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+         
+
+            <div class="team-member">
+              
+              <h4>Matthew Euliano</h4>
+              <p class="text-muted">Master of Science in Robotics @ Northeastern University</p>
+
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="docs/Euliano_Resume_2022_05.pdf">
+                    <i class="fa fa-file-pdf"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/meuliano">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="mailto:euliano.m@northeastern.edu">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/matthew-euliano-74658910a/">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+           
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-    <footer>
-        <p>Matthew Euliano Portfolio</p>
-    </footer> 
+    <!-- Portfolio Modals -->
+
+    <!-- ORB-SLAM3 -->
+    <div class="portfolio-modal modal fade" id="orbslam" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h3 class="text-uppercase">VI SLAM on Northeastern Autonomous Car</h3>
+                    <a class="boxed">ROS</a>&ensp;<a class="boxed">Computer Vision</a>&ensp;<a class="boxed">Python</a>&ensp;<a class="boxed">MATLAB</a>&ensp;
+                    <p></p><br>
+                    <h4>Brief Description</h4>
+                    <p></p>     
+                    <p>This project aims to integrate the ORB-SLAM3 algorithm with ROS for localization and mapping on the NUance autonomous car.
+                    </p>
+                    <h4>Motivation</h4>  
+                    <p></p>
+                    <img class="img-fluid" src="img/nuance_orbslam3" alt="" width="614" height="395">  
+                    <p>Figure 1</p>               
+                    <p>While seemingly simple, a motor task, such as retrieving an object from a high shelf, is very complicated. To achieve this task, movement-related signals 
+                        are generated from the motor cortex of our brain and relayed to muscle fibers via motor neurons. In turn, muscles contract and the arm is raised and extended. 
+                        There are more than 600 muscles in our body.  Instead of controlling each muscle individually, our brain is thought to recruit these muscles in set groups. 
+                        The activation of muscles in this grouped manner is termed muscle synergies and is part of a hierarchical control strategy. Activation of muscle synergies, 
+                        rather than individual muscles, allows for a simplified control of one’s limb. In this work, the focus is on muscle activation at the arm. Specifically, 
+                        the goal is to determine how muscles concurrently activate when an individual abducts at the shoulder and flexes at the elbow. As such, we can determine 
+                        normal muscle activation patterns in a population that is neurologically and orthopaedically intact.
+                    </p>
+                    <p></p>
+                    <h4>Hypothesis</h4>
+                    
+                    <ul class="list-inline">
+                    <p class="item-intro text-muted"> <a class="boxed" href="https://github.com/mushenghe/muscle_synergy_torque_accuracy"><font color="red"><b>Current Status and Source code here</b></font></a></p>
+                      <li>Date: December 2019</li>
+                     
+                    </ul>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fas fa-times"></i>
+                      Close Project</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
 </html>
