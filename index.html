@@ -129,6 +129,7 @@
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fas fa-plus fa-3x"></i>
+                  
                 </div>
               </div>
               <img class="img-fluid" src="img/portfolio/rl_cars_demo.gif" alt="">
@@ -192,7 +193,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#comingsoon">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -205,6 +206,24 @@
               <h4>SDU Medical Robotics</h4>
               <p class="text-muted"><i>Python | DMP | MATLAB | DAQ</i> <br><br>
                 Taught a UR3 arm to perform electrical impedance sensing through demonstration using DMPs.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#pillavate">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                  
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/pillavate/pillavate_gif_base.gif" alt="">
+            </a>
+            <div class="portfolio-caption"style="background-color: #22333d; color:rgba(253, 201, 43, 1)">
+              <h4>Pillavate</h4>
+              <p class="text-muted"><i>Arduino | Product Design | Biometrics</i> <br><br>
+                Elevating pillow based on biometric sensor readings for people suffering from 
+                congestive heart failure and sleep apnea.</p>
             </div>
           </div>
 
@@ -459,6 +478,52 @@
 
 
     <!-- Portfolio Modals -->
+    <!-- RL Cars -->
+    <div class="portfolio-modal modal fade" id="rlCars" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body" style="color:rgb(255, 255, 255)">
+                  <!-- Project Details Go Here -->
+                  <h1 class="text-uppercase">More Info</h1>                   
+                  <p>Applied deep reinforcement learning algorithms (PPO, SAC, TD3) to the problem of simulated parallel parking using
+                    Unity 3D with the ML-Agents toolkit.</p>
+
+                  <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                      <h4>Technical Report</h4></li>  
+                    <li class="list-inline-item">
+                      <a href="docs/RL_Cars/report.pdf">
+                        <i class="fa fa-file-pdf"></i></a></li></ul>
+
+                  <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                      <h4>Presentation</h4></li>  
+                    <li class="list-inline-item">
+                      <a href="docs/RL_Cars/presentation.ppt">
+                        <i class="fa fa-file-powerpoint"></i></a></li></ul>
+
+                  <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                      <h4>Code Repository</h4></li>  
+                    <li class="list-inline-item">
+                      <a href="https://github.com/meuliano/RL_Parking">
+                        <i class="fab fa-github"></i></a></li></ul>
+
+                  <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                      <h4>Video Demo</h4></li>  
+                    <li class="list-inline-item">
+                      <a href="https://www.youtube.com/watch?v=QDVwSAgY6cA">
+                        <i class="fab fa-youtube"></i></a></li></ul>
+                </div></div></div></div></div></div></div>
 
     <!-- ORB-SLAM3 -->
     <div class="portfolio-modal modal fade" id="orbslam" tabindex="-1" role="dialog" aria-hidden="true">
@@ -472,26 +537,52 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-8 mx-auto">
-                  <div class="modal-body">
+                  <div class="modal-body" style="color:rgb(255, 255, 255)">
                     <!-- Project Details Go Here -->
-                    <h3 class="text-uppercase">VI SLAM on Northeastern Autonomous Car</h3>
-                    <a class="boxed">ROS</a>&ensp;<a class="boxed">Computer Vision</a>&ensp;<a class="boxed">Python</a>&ensp;<a class="boxed">MATLAB</a>&ensp;
-                    <p></p><br>
-                    <h4>Brief Description</h4>
-                    <p></p>     
-                    <p>This project aims to integrate the ORB-SLAM3 algorithm with ROS for localization and mapping on the NUance autonomous car.
-                    </p>
-                    <h4>Motivation</h4>  
-                    <p></p>
-                    <img class="img-fluid" src="img/nuance_orbslam3" alt="" width="614" height="395">  
-                  </div>
-                </div>
-              </div>
+                    <h1 class="text-uppercase">More Info</h1>                   
+                    <p>This project aims to integrate the ORB-SLAM3 algorithm with ROS for localization and mapping on the NUance autonomous car.</p>
+                    <ul class="list-inline social-buttons">
+                      <li class="list-inline-item">
+                        <h4>Final Presentation</h4>
+                      </li>  
+                      <li class="list-inline-item">
+                        <a href="docs/EECE5554Group8FinalPresentation.pdf">
+                          <i class="fa fa-file-powerpoint"></i></a></li></ul>
+                    <ul class="list-inline social-buttons">
+                      <li class="list-inline-item">
+                        <h4>Github Repository</h4></li>  
+                      <li class="list-inline-item">
+                        <a href="https://github.com/meuliano/rsn_orbslam3">
+                          <i class="fab fa-github"></i></a></li></ul>
+                  </div></div></div></div></div></div></div>
+
+    <!-- Pillavate -->
+    <div class="portfolio-modal modal fade" id="pillavate" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
             </div>
           </div>
-        </div>
-      </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body" style="color:rgb(255, 255, 255)">
+                  <!-- Project Details Go Here -->
+                  <h1 class="text-uppercase">More Info</h1>                   
+                  <p>Elevating pillow based on biometric sensor readings for people suffering from 
+                    congestive heart failure and sleep apnea.</p>
 
+                  <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                      <h4>Technical Report</h4></li>  
+                    <li class="list-inline-item">
+                      <a href="docs/pillavate_report.pdf">
+                        <i class="fa fa-file-pdf"></i></a></li></ul>
+                </div></div></div></div></div></div></div>
+
+          
     <!-- Healer Baxter -->
     <div class="portfolio-modal modal fade" id="healerbaxter" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -648,58 +739,7 @@
       </div>
     </div>
 
-    <!-- Visual Pushing and Grasping -->
-    <div class="portfolio-modal modal fade" id="pushinggrasping" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                <div class="rl"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h3 class="text-uppercase">Visual Pushing and Grasping</h3>
-                    <a class="boxed">Deep Reinforcement Learning</a>&ensp;<a class="boxed">Docker</a>&ensp;<a class="boxed">Pytorch</a>
-                    <p></p>
-                    <h4>Brief Description</h4> 
-                    <p>Most grasping algorithms today often fail to handle scenarios where objects are tightly packed together. They can attempt bad grasps repeatedly to no avail since they can only find accessible grasps. This project proposed to discover and learn synergies between pushing and grasping from experience through model-free deep reinforcement learning.</p>
-                    <h5>System Overview</h5> 
-                    <p></p>
-                    <p></p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/pushing_grasping/method.jpg" alt="">
-                    <p></p>
-                    <h5>Model Input & Output</h5>
-                    <p></p>
-                    <p>The Q-function is modeled as two feed-forward fully convolutional networks(FCNs) Φp and Φg. FCN Φp is for pushing motion primitive behavior and FCN Φg is for grasping.</p>
-                    <p></p>
-                    <p>For each individual FCN Φψ:</p>
-                    <p></p>
-                    <p>Input: the heightmap image representation of the current state</p>
-                    <p>Output: a dense pixel-wisemap of Q values with the same image size and resolution as that of the state</p>
-                    <p></p>
-                    <p>Note: each individual Q value prediction at a pixel p represents the future expected reward of executing primitive ψ at 3D location q where q→p ∈st.</p>  
-                    
-                    <p></p>
-                    <h5>Use the pretrained model</h5> 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/i_fHtQ-zDkM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <ul class="list-inline">
-                    <p><a class="boxed" href="https://github.com/mushenghe/visual-pushing-grasping"><font color="red"><b>Github Page</font></a></p> 
-                    </ul>
-                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                        <i class="fas fa-times"></i>
-                        Close Project</button>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
-      
+   
     <!-- Coming Soon! -->
     <div class="portfolio-modal modal fade" id="comingsoon" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -745,105 +785,7 @@
           </div>
       </div>
       </div>
-    <!-- Panorama -->
-    <div class="portfolio-modal modal fade" id="panorama" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h3 class="text-uppercase">ImageMosaic</h3>
-                  <a class="boxed">Computer Vision</a>&ensp;<a class="boxed">MATLAB</a>&ensp;<a class="boxed">Python</a>
-                  <p></p>
-                  <h4>Brief Description</h4>
-                  <p>The goal of this project is to Create an image panorama by stitching a set of images together</p>                           
-                  <h5>Image Registration</h5>
-                  <p>I used SURF to do the feature point extraction and matching, then used random sample consensus(RANSAC) for transform matrix estimation</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/SURFMatches.jpg" alt="">
-                  <h5>Image Warping</h5>
-                  <p>Use the derived transform matrix nad project that warped image on a plain surface</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/img1.jpg" alt="">
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/img2.jpg" alt="">
-                  <h5>Image Blending</h5>
-                  <p>Using Center-Weighting algorithm (compute the the distance from each pixel to 4 boundaries of the image and take the the smallest ratio                   
-                    between two distances and the dimension of image as the corresponding pixel
-                    value on mask matrix). The mask we derived is shown in the following image:</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/mask.jpg" alt="">
-                  <p>For each image, I derive a mask and then warp the mask just as warp the image</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/before.jpg" alt="">
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/after.jpg" alt="">
-                  <h5>Cropping</h5>
-                  <p>After doing image stitching and image blending, I get the panorama look as following</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/1.jpg" alt="">
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/2.jpg" alt="">
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/3.jpg" alt="">
-                  <p>Use pythong to find the largest rectangle that don’t include the black region in the
-                    panorama image, I get the final panorama look as following</p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/1_a.jpg" alt="">
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/2_a.jpg" alt="">
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/3_a.jpg" alt="">
-                  <ul class="list-inline">
-                  <p><a class="boxed" href="https://drive.google.com/file/d/1p8h66kcTu3J3DAQ-OETgzaHgj101Kw8o/view?usp=sharing"><font color="red"><b>Report</font></a></p>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fas fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Dynamics -->
-    <div class="portfolio-modal modal fade" id="dynamics" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h3 class="text-uppercase">Pin-triangle Dynamics Simulation </h3>
-                  <a class="boxed">Python</a>&ensp;<a class="boxed">Dynamics</a>&ensp;<a class="boxed">Simulation</a>
-                  <p></p>
-                  <h4>Brief Description</h4>
-                  <p>This project is a dynamics simulation of a triangle bouncing in the enclosed rectangle. This project shows techniques expansion from theory and ability of building physical model.  </p>
-                  <p></p>
-                  <h5>dynamic model</h5>
-                  <p>The pictured pin-triangle is a constrained system involving 2 bodies: a equilateral triangle and a square. the triangle has length d = 3, mass m =0.5 and rotational inertia J=1 (assuming that the center of mass is at the center of geometry). The square has length D = 20, mass M = 5 and rotational inertia J=3 (assuming that the center of mass is at the center of geometry). The triangle has configuration (x,y,\theta_t) and the square has an angle \theta_s relative to the world frame. The triangle is constrainted to not bounce out of the square.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/dynamics_proj/model.png" alt="">
-                  <ul class="list-inline">
-                    <p><a class="boxed" href="https://colab.research.google.com/drive/1d3GrjH75j-MqSYNUyhwd3FWeb2eVgY4D"><font color="red"><b>Python Source Code</font></a></p>
-                    
-                   
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fas fa-times"></i>
-                    Close Project</button>
-                    
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
